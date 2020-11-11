@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FRIENDS"
+        android:textSize="36sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click on an elegible single user to leam more and see if you are compatible for a date "
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text1" />
+    <TableLayout
+        android:id="@+id/tablelayout"
+        app:layout_constraintTop_toBottomOf="@+id/text2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:layout_width="29dp"
+                android:layout_height="160dp"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/juanes"
+                android:tag="famosa1"
+                tools:src="@drawable/famosa1" />
+
+
+            <ImageButton
+                android:layout_width="15dp"
+                android:layout_height="157dp"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/famosa2"
+                android:tag="famosa2" />
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="157dp"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/famosa5"
+                android:tag="famosa3" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:layout_width="61dp"
+                android:layout_height="151dp"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/famoso4"
+                android:tag="famoso4" />
+
+            <ImageButton
+                android:layout_width="89dp"
+                android:layout_height="151dp"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/famoso3"
+                android:tag="famoso5" />
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="151dp"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/famoso6"
+                android:tag="famoso6" />
+        </TableRow>
+
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
